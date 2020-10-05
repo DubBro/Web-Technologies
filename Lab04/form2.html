@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab04</title>
+</head>
+<body>
+    <form oninput="pounds.value= Math.round(weight.value*2.20462); centner.value=weight.value/100">
+        <fieldset>
+            <legend>Вес</legend>
+            <div>
+                <label for="weight">
+                    Введите ваш вес в кг:
+                    <input type="number" id="weight" name="weight">
+                </label>
+            </div>
+            <div>
+                <label for="pounds">
+                    Ваш вес в фунтах:
+                    <output name="pounds" id="pounds">0</output>
+                </label>
+            </div>
+            <div>
+                <label for="centner">
+                    Ваш вес в центнерах:
+                    <output name="centner" id="centner">0</output>
+                </label>
+            </div>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <form oninput="sum.value=parseInt(first.value)+parseInt(second.value)">
+        <fieldset>
+            <legend>Введи 2 числа - получи сумму</legend>
+            <div>
+                <input type="number" name="first"> +
+                <input type="number" name="second"> =
+                <output name="sum">0</output>
+            </div>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <form oninput="result.value=range.value">
+        <fieldset>
+            <legend>Сколько вы хотите заработать?</legend>
+            <div>
+                0
+                <input type="range" name="range" value="0">
+                100
+            </div>
+            <div>
+                <output name="result">0</output>
+            </div>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <form oninput="result.value=hours.value*rate.value+hours.value*rate.value*tax.value">
+        <fieldset>
+            <legend>Расчитай ЗП</legend>
+            <div>
+                Количество часов:
+                <input type="number" name="hours">
+            </div>
+            <div>
+                Ставка грн.:
+                <input type="number" name="rate">
+            </div>
+            <div>
+                Налог:
+                <input type="number" name="tax">
+            </div>
+            <div>
+                Зарплата всего грн.:
+                <output name="result">0</output>
+            </div>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <button type="submit">Поехали</button>
+    <button type="reset">Чисто</button>
+</body>
+</html>
