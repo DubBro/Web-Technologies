@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab05</title>
+</head>
+<body>
+    <form>
+        <div>
+            <h1>Анкета измученного</h1>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <p>
+                    <label for="first_name">
+                        Имя:
+                        <input type="text" id="first_name" required placeholder="Имя">
+                    </label>
+                </p>
+                <p>
+                    <label for="last_name">
+                        Фамилия:
+                        <input type="text" id="last_name" placeholder="Фамилия">
+                    </label>
+                </p>
+                <p>
+                    <label for="email">
+                        Email:
+                        <input type="email" id="email" autocomplete="off" required placeholder="abc@mail.com">
+                    </label>
+                </p>
+                <p>
+                    <label for="soc_network">
+                        Ссылка на Вашу социальную страницу:
+                        <input type="url" id="soc_network" placeholder="http://abc.com">
+                    </label>
+                </p>
+                <p>
+                    <label for="mobile_phone">
+                        Номер телефона:
+                        <input type="tel" id="mobile_phone" placeholder="0xx-xxx-xx-xx" pattern="0[1-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                    </label>
+                </p>
+                <p>
+                    <label for="age">
+                        Сколько Вам полных лет:
+                        <input type="number" min="10" max="150" step="1" id="age" required placeholder="Возраст">
+                    </label>
+                </p>
+                <p>
+                    <label for="horoscope">
+                        Кто Вы по гороскопу:
+                        <input id="horoscope" list="horo" placeholder="Знак зодиака">
+                        <datalist id="horo">
+                            <option>Овен</option>
+                            <option>Телец</option>
+                            <option>Близнецы</option>
+                            <option>Рак</option>
+                            <option>Лев</option>
+                            <option>Дева</option>
+                            <option>Весы</option>
+                            <option>Скорпион</option>
+                            <option>Стрелец</option>
+                            <option>Козерог</option>
+                            <option>Водолей</option>
+                            <option>Рыбы</option>
+                        </datalist>
+                    </label>
+                </p>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Немного о страданиях</legend>
+                <p>
+                    <label for="pain">
+                        Наскольки Вы измучались (в %):
+                        <input type="range" min="0" max="100" id="pain" required>
+                    </label>
+                </p>
+                <p>
+                    <label for="date">
+                        Когда начались Ваши страдания:
+                        <input type="date" id="date">
+                    </label>
+                </p>
+                <p>
+                    <label for="description">
+                        Опишите Ваши страдания:
+                        <textarea id="description" spellcheck="false" placeholder="Я задолбался..."></textarea>
+                    </label>
+                </p>
+            </fieldset>
+        </div>
+        <div>
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
+        </div>
+    </form>
+</body>
+</html>
