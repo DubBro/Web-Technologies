@@ -1,0 +1,30 @@
+p {
+    color: lightgreen;
+    text-align: center;
+}
+
+.red_text {
+    color: red;
+}
+
+#second_p {
+    color: pink;
+}
+
+a {
+    color: red;
+}
+
+ul li {
+    color: lightgreen;
+}
+
+ul li ul li{
+    color: pink;
+    list-style-type: none;
+}
+
+.last_list li {
+    list-style-type: square;
+    text-decoration: none;
+}
