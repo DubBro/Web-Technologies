@@ -1,0 +1,66 @@
+body {
+    width: 300px;
+    margin: 0;
+    padding: 0 10px;
+
+    font-size: 16px;
+    font-family: "Times New Roman", serif;
+}
+
+div {
+    background-color: aquamarine;
+    margin: 10px 10px;
+    padding: 1px 1px;
+}
+
+.recipe {
+    border-left: solid red 2px;
+    border-right: solid yellow 2px;
+    border-top: solid blue 2px;
+    border-bottom: solid green 2px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 22px;
+    color: red;
+}
+
+.sub {
+    vertical-align: sub;
+    font-size: 12px
+}
+
+.sup {
+    vertical-align: super;
+    font-size: 12px
+}
+
+.del {
+    text-decoration:line-through;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+    color: white;
+}
+
+ol li {
+    color: yellow;
+}
+
+p {
+    color: darkblue;
+}
+
