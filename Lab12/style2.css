@@ -1,0 +1,127 @@
+@keyframes anim{
+    from{margin-left:3px;}
+    to{margin-left:500px;}
+}
+#d1{
+    animation:anim 4s 3;
+}
+#d1{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+/*----------*/
+
+@keyframes anim{
+    from{margin-left:3px;}
+    to{margin-left:500px;}
+}
+
+#d2{
+    animation: anim 4s infinite;
+}
+#d2{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+/*----------*/
+
+body{
+    height: 300px;
+    overflow: hidden;
+}
+
+@keyframes anim1{
+    0%{margin-left:0px; margin-top: 0px}
+    25%{margin-left:500px; margin-top: 0px}
+    50%{margin-left:500px; margin-top: 200px}
+    75%{margin-left:0px; margin-top: 200px}
+    100%{margin-left:0px; margin-top: 0px}
+}
+@keyframes anim2{
+    0%{background: white;}
+    50%{background: red;}
+    100%{background: white;}
+}
+
+#d3{
+    -webkit-animation: anim1 8s linear infinite, anim2 2s linear infinite;
+    animation: anim1 8s linear infinite, anim2 2s linear infinite;
+}
+#d3{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+/*----------*/
+
+@keyframes anim{
+    from{margin-left: 0%;}
+    to{margin-left: 50%;}
+}
+
+#d4{
+    -webkit-animation: anim 2s infinite alternate;
+    animation: anim 2s infinite alternate;
+}
+#d4{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+/*----------*/
+
+body{
+    margin: 0px;
+}
+@keyframes bouncing{
+    40%, 70%, 90%{
+        animation-timing-function: ease-out;
+        bottom: 0;
+    }
+    0%{
+        bottom: 200px;
+        left: 0;
+        animation-timing-function: ease-in;
+    }
+    55%{
+        bottom: 50px;
+        animation-timing-function: ease-in;
+    }
+    80%{
+        bottom: 25px;
+        animation-timing-function: ease-in;
+    }
+    95%{
+        bottom: 10px;
+        animation-timing-function: ease-in;
+    }
+    100%{
+        left: 110px;
+        bottom: 0;
+        animation-timing-function: ease-out;
+    }
+}
+
+
+#wrapper{
+    margin: 0px auto;
+    width: 220px;
+    height: 220px;
+    border: 1px solid red;
+    position: relative;
+}
+#ball{
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+
+    animation: bouncing 5s infinite;
+}
