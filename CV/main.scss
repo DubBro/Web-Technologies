@@ -46,11 +46,28 @@ section {
   display: flex;
 
   &_type {
-    min-width: 90px;
+    min-width: 110px;
   }
 }
 
+.description {
+  margin-bottom: 2em;
+}
+
 .experience {
+  display: flex;
+  margin-bottom: 2em;
+
+  &_date {
+    min-width: 185px;
+    margin-bottom: 1em;
+  }
+  &_name {
+    font-weight: bold;
+  }
+}
+
+.education {
   display: flex;
   margin-bottom: 2em;
 
